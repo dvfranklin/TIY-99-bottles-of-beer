@@ -19,7 +19,7 @@ public class Converter {
         // convert 1,000,000,000 - integer limit
         if(number / 1000000000 >= 1){
 
-            finalText = processThree(number, 1000000000, "billion ");
+            finalText += processThree(number, 1000000000, "billion ");
             finalText += processThree(number, 1000000, "million ");
             finalText += processThree(number, 1000, "thousand ");
             finalText += convertHundreds(number % 1000);
